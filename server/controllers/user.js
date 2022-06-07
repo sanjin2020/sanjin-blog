@@ -42,7 +42,8 @@ async function getDateBetween(start, end) {
 async function getCommitCount(time) {
   //https://github.com/faultaddr?tab=overview&from=2021-09-01&to=2021-09-31
   //https://github.com/users/faultaddr/contributions?to=2021-12-31
-  const response = await axios.get(`https://github.com/users/sanjin2020/contributions?to=2021-12-31`);
+  // const response = await axios.get(`https://github.com/users/sanjin2020/contributions?to=2022-03-31`);
+  const response = await axios.get(`https://github.com/users/sanjin2020/contributions`);
   var parser = new DomParser();
   var doc = parser.parseFromString(response.data)
   var crArray = doc.getElementsByClassName('ContributionCalendar-day')
