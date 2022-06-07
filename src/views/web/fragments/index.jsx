@@ -4,6 +4,7 @@ import { Comment, Tooltip, List, Card, Avatar } from 'antd'
 import axios from '@/utils/axios'
 import useAjaxLoading from '@/hooks/useAjaxLoading'
 import dayjs from '@/utils/dayjs'
+import avatar from '../../../assets/images/avatar.jpg'
 
 const { Meta } = Card
 
@@ -77,7 +78,7 @@ function FragmentList(props) {
                   <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <Avatar
                       style={{ marginRight: '10px' }}
-                      src={'http://www.panyunyi.cn/static/media/avatar.7e58ba1b.jpeg'}
+                      src={avatar}
                     />
                     <p style={{ margin: 'auto', fontSize: 13 }}>寸寸时光,易逝</p>
                   </div>

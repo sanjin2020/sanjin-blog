@@ -33,7 +33,8 @@ const config = {
   DATABASE: {
     database: 'test',
     user: 'root',
-    password: 'gx2022',
+    password: '',
+    // password: 'gx2022',
     options: {
       host: 'localhost', // 连接的 host 地址
       dialect: 'mysql', // 连接到 mysql
